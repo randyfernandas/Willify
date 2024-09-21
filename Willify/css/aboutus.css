@@ -1,0 +1,133 @@
+body {
+    background-color: #744b9c;
+}
+
+body a{
+    text-decoration: none;
+}
+/* header */
+#logo {
+    width: 60%;
+    margin-left:15px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+    align-items: center;
+}
+
+.nav-left {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-right: 10px;
+    gap: 10px;
+}
+
+#icon {
+    width: 25px;
+    height: 25px;
+    border-radius: 30px;
+    margin-left: 25px;
+    background-color: #744b9c;
+}
+
+#iconbck {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    margin-left: 30px;
+}
+
+#iconbck :hover {
+    background-color: #BBA6D5;
+}
+
+/* body */
+#wrapper {
+    background-color: #744b9c;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: center;
+    display: flex;
+}
+
+#head {
+    color: #533A6C;
+}
+
+#card {
+    text-align: center;
+    background-color: #8262AA;
+    border-radius: 10px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+}
+
+#text {
+    text-align: justify;
+    background-color: #8262AA;
+    border-radius: 10px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+}
+
+#text p {
+    color: #533A6C;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    margin-left: 15px;
+}
+
+#img {
+    width: 100px;
+}
+
+@media (max-width: 768px) {
+    #logo {
+        width: 80%; /* Mengubah lebar logo agar lebih kecil */
+        margin-left: 10px;
+    }
+
+    nav {
+        flex-direction: column; /* Mengubah arah flex menjadi kolom */
+        align-items: flex-start;
+    }
+
+    .nav-left {
+        margin-right: 0; /* Mengatur ulang margin */
+        justify-content: center;
+        gap: 5px;
+    }
+
+    #icon, #iconbck {
+        margin-left: 10px; /* Mengurangi margin kiri */
+    }
+
+    #wrapper {
+        flex-direction: column; /* Mengubah arah flex menjadi kolom */
+        margin-top: 10px;
+    }
+
+    #card, #text {
+        width: 90%; /* Mengubah lebar agar lebih kecil */
+        padding: 10px 15px;
+    }
+
+    #text p {
+        margin-left: 10px; /* Mengurangi margin kiri */
+    }
+
+    #img {
+        width: 80px; /* Mengurangi lebar gambar */
+    }
+}

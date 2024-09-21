@@ -1,0 +1,130 @@
+body {
+    background-color: #744b9c;
+}
+
+/* header */
+#logo {
+    width: 60%;
+    margin-left:15px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+    align-items: center;
+}
+
+.nav-left {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-right: 10px;
+    gap: 10px;
+}
+
+/* body */
+#wrapper {
+    background-color: #744b9c;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#head {
+    color: #533A6C;
+    margin-bottom: 0px;
+}
+
+#regisform {
+    text-align: center;
+    background-color: #8262AA;
+    border-radius: 10px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    width: 500px;
+}
+
+.input-wrapper{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 200px;
+    height: 30px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+
+#regis{
+    width: 150px;
+    background-color: #533A6C;
+    color: #8262AA;
+    margin-top: 30px;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.Input {
+    margin-bottom: 15px; 
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="password"]{
+    width: 180px;
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+}
+
+#errorMessages {
+    color: red;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    #logo {
+        width: 90%;
+        margin-left: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-left {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+        margin-right: 0;
+    }
+
+    #wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #regisform {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .input-wrapper {
+        width: 100%;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="number"],
+    input[type="password"] {
+        width: 100%;
+    }
+}

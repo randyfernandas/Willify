@@ -1,0 +1,55 @@
+body {
+    background-color: #744b9c;
+}
+
+/* header */
+#logo {
+    width: 60%;
+    margin-left:15px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+    align-items: center;
+}
+
+.nav-left {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-right: 10px;
+    gap: 10px;
+}
+
+#icon {
+    width: 25px;
+    height: 25px;
+    border-radius: 30px;
+    margin-left: 25px;
+    background-color: #744b9c;
+}
+
+#iconbck {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    margin-left: 30px;
+}
+
+#iconbck :hover {
+    background-color: #BBA6D5;
+}
+
+#head {
+    color: #533A6C
+}
+
+.wrapper {
+    width: auto;
+    align-content: center;
+    height: 500px;
+    text-align: center;
+}

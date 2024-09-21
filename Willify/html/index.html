@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/register.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <img src="../assets/logogede.png" alt="" id="logo">
+        </div>
+    </nav>
+    <div id="wrapper">
+        <form id="regisform" action="">
+            <h1 id="head">Sign up to start your music journey</h1>
+            <div class="input-wrapper">
+                <label for="name">Username</label>
+                <input id="name" type="text" name="name" required>
+            </div>
+            <div class="input-wrapper">
+                <label for="email">Email</label>
+                <input id="email" type="email" name="email" required>
+            </div>
+            <div class="input-wrapper">
+                <label for="phone">Phone</label>
+                <input id="phone" type="tel" name="phone" required>
+            </div>
+            <div class="input-wrapper">
+                <label for="password">Password</label>
+                <input id="password" type="password" name="password" required>
+            </div>
+            <div class="input-wrapper">
+                <label for="confirmpassword">Confirm Password</label>
+                <input id="confirmpassword" type="password" name="confirmpassword" required>
+            </div>
+            <div class="input-wrapper">
+                <label for="age">Age</label>
+                <input type="number" name="age" required>
+            </div>
+            <div class="input-wrapper">
+                <label for="gender">Gender</label>
+                <div>
+                    <input type="radio" name="gender" id="male">
+                    <label for="male">Male</label>
+                </div>
+                <div>
+                    <input type="radio" name="gender" id="female">
+                    <label for="female">Female</label>
+                </div>
+            </div>
+            <button id="regis" type="submit">Sign up</button>
+        </form>
+    </div>
+    <div id="errorMessages"></div> 
+    <script src="../js/register.js"></script>
+</body>
+</html>

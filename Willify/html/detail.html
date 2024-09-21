@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/detail.css">
+    <script src="https://kit.fontawesome.com/f03358da3f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <img src="../assets/logokecil.png" alt=""
+            id="logo">
+            <a href="./home.html">
+                <div id="iconbck">
+                    <img src="../assets/back.png" alt="" id="icon">
+                </div>
+            </a>
+        </div>
+        <div class="nav-right">
+            <img src="../assets/user.png" alt="" id="icon1">
+            <a href="./index.html">
+                <button type="submit">Log out</button>
+            </a>
+        </div>
+    </nav>
+
+    <div id="flexcont">
+        <div class="card1">
+            <a href="./home.html">
+                <div class="menu">
+                    <img src="../assets/home.png" alt="" id="icon1">
+                    <p>Home</p>
+                </div>
+            </a>
+            <div class="menu">
+                <img src="../assets/user.png" alt="" id="icon1">
+                <p>Profile</p>
+            </div>
+            <p>Your Playlist</p>
+            <div class="menu">
+                <img src="../assets/playlist.jpg" alt="" id="plylist">
+                <div class="plst">
+                    <p id="playlist">Chill.</p>
+                    <p id="playlist">38 Songs</p>
+                </div>
+            </div>
+            <a href="./aboutus.html">
+                <div class="menu2">
+                    <img src="../assets/info.png" alt="" id="icon1">
+                    <p>About Us</p>
+                </div>
+            </a>
+        </div>
+        <div class="card2">
+            <div class="lst">
+                <img src="../assets/locked out of heaven.jpeg" alt="" id="img">
+                <div class="song">
+                    <p>Locked out of Heaven</p>
+                    <p>Bruno Mars</p>
+                </div>
+            </div>
+            <div class="lst2">
+                <div class="song2">
+                    <p>Artist : Bruno Mars</p>
+                    <p>Released : 2012</p>
+                    <p>Album : Unorthodox Jukebox</p>
+                    <p>Genres : Reggae, Pop rock, R&B/Soul, Reggae rock, Pop</p>
+                    <p>Awards : MTV Europe Music Award for Best Song, MTV Video Music Award for Best Male Video</p>
+                </div>
+                <div class="song3">
+                    <a href="#">Lyrics</a>
+                    <div class="lrk">
+                        <div class="lrk1">
+                            <p>One, two, one, two, three</p>
+                            <p>Oh, yeah, yeah</p>
+                            <p>Oh, yeah, yeah, yeah, yeah, uh</p>
+                            <p>Oh, yeah, yeah</p>
+                            <p>Oh, yeah, yeah, yeah, yeah, uh</p>
+                            <p>Never had much faith in love or miracles (miracles) uh</p>
+                            <p>Never wanna put my heart on the line, uh</p>
+                            <p>But swimming in your water is something spiritual (spiritual) uh</p>
+                            <p>I'm born again every time you spend the night, uh</p>
+                            <p>'Cause your sex takes me to paradise</p>
+                        </div>
+                        <div class="lrk1">
+                            <p>Yeah, your sex takes me to paradise</p>
+                            <p>And it shows</p>
+                            <p>Yeah, yeah, yeah</p>
+                            <p>'Cause you make me feel like</p>
+                            <p>I've been locked out of heaven</p>
+                            <p>For too long, for too long</p>
+                            <p>Yeah, you make me feel like</p>
+                            <p>I've been locked out of heaven</p>
+                            <p>For too long, for too long, oh-oh, oh-oh-oh</p>
+                            <p>Oh, yeah, yeah, yeah, yeah (ooh)</p>
+                            <p>Oh, yeah, yeah 
+                                <a href="./lirik.html">...</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card3">
+        <img src="../assets/locked out of heaven.jpeg" alt="" id="imgfoot">
+        <div class="text">
+            <a href="./detail.html">
+                <p>Locked out of Heaven</p>
+                <p>Bruno Mars</p>
+            </a>
+        </div>
+        <div class="fiturcont">
+            <div class="iconcont">
+                <div>
+                    <i class="fa-solid fa-backward" style="color: #533a6c;"></i>
+                </div>
+                <div onclick="playPause()">
+                    <i class="fa-solid fa-play" style="color: #533a6c;" id="icons"></i>
+                </div>
+                <div>
+                    <i class="fa-solid fa-forward" style="color: #533a6c;"></i>
+                </div>
+            </div>
+            <audio id="song">
+                <source src="../assets/songs/locked-out-of-heaven.mp3" type="audio/mpeg">
+            </audio>
+            <div class="iconcont1">
+                <input type="range" id="bar" name="range" min="0" max="150">
+            </div>
+        </div>
+        <div class="iconcont2">
+            <a href="./lirik.html">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#533a6c" d="M499.1 6.3c8.1 6 12.9 15.6 12.9 25.7v72V368c0 44.2-43 80-96 80s-96-35.8-96-80s43-80 96-80c11.2 0 22 1.6 32 4.6V147L192 223.8V432c0 44.2-43 80-96 80s-96-35.8-96-80s43-80 96-80c11.2 0 22 1.6 32 4.6V200 128c0-14.1 9.3-26.6 22.8-30.7l320-96c9.7-2.9 20.2-1.1 28.3 5z"/></svg>
+            </a>
+        </div>
+    </div>
+</body>
+<script src="../js/songplayer.js"></script>
+</html>
